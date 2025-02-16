@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life With Ease | Links</title>
+    <style>
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #f3f3f3, #ffffff);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 680px;
+            width: 100%;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .profile {
+            margin-bottom: 30px;
+        }
+
+        .profile img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .profile h1 {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 100%;
+        }
+
+        .link-item {
+            display: block;
+            background: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 100%;
+            min-width: 100px;
+        }
+
+        .link-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.1);
+        }
+
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            color: #666;
+            font-size: 0.8rem;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .p-1 {
+            padding: 1rem;
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 480px) {
+            .links {
+                padding: 0 10px;
+            }
+            .link-item {
+                padding: 12px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="./media/logo.jpg" alt="Life With Ease">
+            <h1>@life.with.ease</h1>
+        </div>
+
+        <div class="links">
+            <a href="https://www.instagram.com/life.with.ease" class="link-item" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="social-icon">
+                Follow on Instagram
+            </a>
+            <!-- Add more links as needed -->
+        </div>
+    </div>
+    <footer>
+        <div class="center p-1">© 2025 Life With Ease</div>
+        <div class="center p-1">
+            <a href="https://tech.ristian.ro" target="_blank">teCh.ristian Consultancy</a>
+        </div>
+    </footer>
+</body>
+</html>
